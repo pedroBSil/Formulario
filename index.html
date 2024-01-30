@@ -9,28 +9,18 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <title>formulario</title>
   </head>
   <body>
     <main>
-      <div class="box-maior">
-        <div id="login" class="form-text">
-          <label for="inputlogin" class="form-label">login</label>
-          <input type="text" id="login" aria-describedby="login" />
-        </div>
-        <div id="passwordHelpBlock" class="form-text">
-          <label for="inputPassword5" class="form-label">Senha</label>
-          <input
-            type="password"
-            id="inputPassword5"
-            aria-describedby="passwordHelpBlock"
-            maxlength="20"
-            oninput="limit();"
-          />
-          <a href="" class="link">Esqueci a senha</a>
-        </div>
+      <form class="form"> 
+        <span id="login-lable">Login</span> 
+        <input class="input" type="text" placeholder="UserName"> 
+        <input class="input" type="text" placeholder="PassWord" minlength="8" maxlength="15">
         <a href="formulario.html" type="button" class="btn btn-outline-primary">Entrar</a>
+    </form>
+       
       </div>
     </main>
     <script src="script.js"></script>
